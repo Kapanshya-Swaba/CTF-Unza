@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+ li {
+    list-style-type: none;
+    
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.navbar{
+    display: flex;
+    background-color: rgb(46, 225, 73);
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+.navbar li {
+    display: block;
+
+}
+.navbar a {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+.navbar :first-child{
+    margin-right:auto;
+    
+}
+.navbar :last-child{
+    margin-left: 0.5rem;
+}
+
+.navbar a:hover{
+    position: relative;
+    
+    background-color:green;
+    border-radius: 12px 9px;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+
+}
+
+
+/* .header {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.7rem;
+    text-decoration: underline;
+    text-decoration-color: red ;
+}
+
+ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol li {
+    clear: both;
+    margin:  0 0 10px 0;
+}
+
+label{
+    float: left;
+    width: 150px;
+} */
+
+input{border: 1px solid #333;}
+input:focus{background-color: #ffe;}
+
+fieldset{
+    width: 216px;
+    }
+    fieldset ol{
+    list-style: none;
+    padding:0;
+    margin:2px;
+    }
+    fieldset ol li{
+    margin:0 0 9px 0;
+    padding:0;
+    }
+    /* Make inputs go to their own line */
+    fieldset input{
+    display:block;
+    }
