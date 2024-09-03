@@ -49,7 +49,7 @@ const db = mysql.createConnection({
 // })
 
 // =======> Checking for login credentials <======= ///
-
+    // bcrpy will be used soon
 app.post('/process-form', (req, res) => {
   // Access form data from req.body
   const username = req.body.email;
@@ -66,7 +66,7 @@ app.post('/process-form', (req, res) => {
 
     if (results.length === 1) {
       // Successful login
-      res.redirect('/index.html');
+      res.redirect(301, '/index.html');
     } else {
       // Invalid credentials
       res.status(401).send('Invalid username or password');
